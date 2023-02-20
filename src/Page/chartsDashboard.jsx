@@ -6,6 +6,7 @@ import { useNavigate} from 'react-router-dom'
 // import  {yupResolver} from "@hookform/resolvers/yup"
 import axios from "axios";
 import { useForm } from 'react-hook-form';
+import Charts from './Charts';
 
 
 const REGISTER_URL = "https://blogapi12.onrender.com/api/v1/postBlog";
@@ -17,7 +18,7 @@ const REGISTER_URL = "https://blogapi12.onrender.com/api/v1/postBlog";
    
 //   })
   
-export const CreateBlog = () => {
+export const ChartsDashboard = () => {
 
   const  {register ,handleSubmit } =  useForm({
     // resolver:yupResolver()
@@ -54,51 +55,13 @@ export const CreateBlog = () => {
         {/* <li>blogPost</li> */}
       </ul>
     </div>
-    <form onSubmit={handleSubmit(onSubmit)}>
-    <div className="rightSide">
-      <div className="form">
-        {/* <div className="formGroup">
-            <label htmlFor="">UserName</label>
-            <input type="text" placeholder='UserName'/>
-        </div> */}
-        <div className="formGroup">
-            <label htmlFor="">Title</label>
-            <input type="text" 
-            id='title'
-             placeholder='Title'
-            name='title'
-            {...register("title")}
-            
-           />
-        </div>
-        <div className="formGroup">
-            <label htmlFor="">image</label>
-            <input type="file" 
-            id='image'
-            placeholder='image'
-           name='image'
-           {...register("image")}
-
-            />
-        </div>
-        <div className="formGroup">
-            <label htmlFor="">Description</label>
-            <textarea placeholder='TitDescriptionle'
-            id='description'
-           name='description'
-           {...register("description")}
-            />
-        </div>
-        <div className="formGroup">
-           <input type="submit"  value="CreateBlog"className="btn"/>
-        </div>
-      </div>
+    <div className="rightSide flex justify-center items-center">
+      <Charts/>
     </div>
-    </form>
 
 
 </div>
   )
 }
 
-export default CreateBlog
+export default ChartsDashboard

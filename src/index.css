@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    overflow-x: hidden;
+}
 .container{
     width: 100%;
     margin: 0 auto;
@@ -50,15 +53,28 @@ li:hover{
 }
 .rigthSidescard{
     display: flex;
+    flex-direction: r;
     justify-content: space-between;
     margin-top: 1rem;
     background-color: #E0E7FF;
-    padding: 0 1rem;
+    padding: 1rem;
     align-items: center;
     color: rgb(5, 2, 2);
     line-height: 4rem;
     /* height:100v auto; */
     border-radius: 0.9rem;
+}
+.image{
+    width: 30%;
+}
+.text{
+display: flex;
+flex-direction: column;
+gap: 0.1rem; 
+width: 60%;
+}
+.text p{
+    margin-top: -2rem;
 }
 .icons{
     display: flex;
