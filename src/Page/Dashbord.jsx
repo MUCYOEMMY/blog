@@ -36,7 +36,7 @@ const getSingleBlog = async (id) => {
   const selectedBlog = blogs.find((blog) => blog._id === id);
   setSelected(selectedBlog);
 
-  reset();
+  // reset();
   console.log(selectedBlog);
 };
 useEffect(() => {
@@ -51,7 +51,7 @@ const onSubmit = async ({ image, title, description }) => {
     formData.append("title", title);
     formData.append("description", description);
     await axios.patch(
-      `https://blogapi12.onrender.com/api/v1/update/id`,
+      `https://blogapi12.onrender.com/api/v1/update/${selected._id}`,
       formData,
       {
         headers: {

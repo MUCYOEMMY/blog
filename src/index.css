@@ -17,25 +17,26 @@ body{
 }
 .LeftSide{
     flex-basis: 20%;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     padding: 0 3rem;
     height: 50vh;
-    border-radius: 0.9rem;
+    /* border-radius: 0.9rem; */
 }
 .rightSide{
     flex-basis: 100%;
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
     padding: 0 3rem;
     /* height: 50vh; */
     border-radius: 0.9rem;
     height: auto;
-    padding: 1rem;
+    padding: 0rem;
 }
 .LeftSide ul {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-top: 1rem;
+    
 }
 li{
     display: block;
@@ -53,7 +54,7 @@ li:hover{
 }
 .rigthSidescard{
     display: flex;
-    flex-direction: r;
+    flex-direction: row;
     justify-content: space-between;
     margin-top: 1rem;
     background-color: #E0E7FF;
@@ -70,7 +71,7 @@ li:hover{
 .text{
 display: flex;
 flex-direction: column;
-gap: 0.1rem; 
+/* gap:0rem;  */
 width: 60%;
 }
 .text p{
@@ -129,14 +130,14 @@ color: rgb(0, 70, 221);
     }
     .LeftSide{
         flex-basis: 100%;
-        border: 1px solid gray;
+        /* border: 1px solid gray; */
         padding: 0 3rem;
         height: 50vh;
-        border-radius: 0.2rem;
+        /* border-radius: 0.2rem; */
     }
     .rightSide{
         flex-basis: 100%;
-        border: 1px solid gray;
+        /* border: 1px solid gray; */
         padding: 0 3rem;
         /* height: 50vh; */
         border-radius: 0.2rem;
@@ -146,7 +147,7 @@ color: rgb(0, 70, 221);
     .LeftSide ul {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 3rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -161,14 +162,14 @@ color: rgb(0, 70, 221);
     }
     .LeftSide{
         flex-basis: 100%;
-        border: 1px solid gray;
+        /* border: 1px solid gray; */
         padding: 0 3rem;
         height: 50vh;
-        border-radius: 0.2rem;
+        /* border-radius: 0.2rem; */
     }
     .rightSide{
         flex-basis: 100%;
-        border: 1px solid gray;
+        /* border: 1px solid gray; */
         padding: 0 3rem;
         /* height: 50vh; */
         border-radius: 0.2rem;
@@ -182,6 +183,12 @@ color: rgb(0, 70, 221);
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+    li{
+        display: block;
+        width: 90px;
+        padding: 0rem;
+        text-align: center;
+    }
     
 }
 .singleBlog{
@@ -193,7 +200,7 @@ color: rgb(0, 70, 221);
 .coments{
     margin-top: 1rem;
 }
-img{
+/* img{
     width: 100%;
     object-fit: cover;
-}
+} */
